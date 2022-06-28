@@ -10,32 +10,18 @@
 
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon.ico">
     <title> Gerador de Recibo - Dom Pedro II </title>
 
     <link rel="stylesheet" href="style.css">
-    <style>
-      .impressao {
-        display: none;
-      }
-
-      @media print {
-        .impressao {
-          display: block;
-        }
-        .form {
-          display: none;
-        }
-      }
-    </style>
   </head>
-  <body style="overflow-x: hidden;">
+  <body>
     
     <div class="main">
-
-      <div class="form">
+      <div class="form mx-auto">
         <div class="mt-5 text-center">
           <img class="ps-3 pb-3" width="100px" src="assets/img/dom-pedro.png" alt="">
-          <h1> Gerador de Recibo - Dom Pedro II </h1>
+          <h1> Gerador de Recibo <br> Dom Pedro II </h1>
         </div>
         <div class="container mt-5">
           <form action="">
@@ -51,9 +37,9 @@
               <label class="form-label"> Número Escolhido </label>
               <input required type="number" class="form-control" id="numero" min="0" max="30" >
             </div>
-            <div class="col-12 text-center">
+            <div class="col-12 mb-4 text-center">
               <button type="submit" onclick="gerarRecibo()" class="btn btn-primary"> Gerar Recibo </button>
-              <button type="reset" class="ms-5 btn btn-outline-danger"> Limpar </button>
+              <button type="reset" class="btn btn-outline-danger mt-2"> Limpar </button>
             </div>
           </form>
         </div>
@@ -107,20 +93,12 @@
           </div>
         </div>
       </div>
-
     </div>
 
     <br><br>
 
-    <script>
-      function gerarRecibo() {
-        document.getElementById('recibo_nome').innerHTML = document.getElementById('nome').value;
-        document.getElementById('recibo_telefone').innerHTML = document.getElementById('telefone').value;
-        document.getElementById('recibo_numero').innerHTML = document.getElementById('numero').value;
-        window.print();
-      }
 
-    </script>
+    <script src="script.js"></script>
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
