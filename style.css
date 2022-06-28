@@ -1,0 +1,7 @@
+#banner {
+  background-image: url('assets/img/banner.jpg');    
+  background-size: contain; 
+  background-repeat: no-repeat; 
+  min-height: 148px; 
+  max-height: 267px;
+}
