@@ -1,7 +1,40 @@
+body {
+  overflow-x: hidden;
+  /* background-color: rgb(165, 0, 0); */
+}
+
+
 #banner {
-  
   background-size: contain; 
   background-repeat: no-repeat; 
   min-height: 148px; 
   max-height: 267px;
+}
+
+.impressao {
+  display: none;
+}
+
+.form {
+  border-radius: 8px;
+  /* border: 1px solid #000; */
+  margin: 24px;
+  padding: 24px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: #fff;
+  max-width: 500px;
+}
+
+.form button {
+  width: 100%;
+}
+
+
+@media print {
+  .impressao {
+    display: block;
+  }
+  .form {
+    display: none;
+  }
 }
