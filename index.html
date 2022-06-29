@@ -38,24 +38,22 @@
           <h1> Gerador de Recibo - Dom Pedro II </h1>
         </div>
         <div class="container mt-5">
-          <form action="">
             <div class="mb-3">
               <label class="form-label"> Nome </label>
-              <input required type="text" class="form-control" id="nome">
+              <input type="text" class="form-control" id="nome">
             </div>
             <div class="mb-3">
               <label class="form-label"> Telefone </label>
-              <input type="tel" required type="number" class="form-control" id="telefone">
+              <input type="tel" type="number" class="form-control" id="telefone">
             </div>
             <div class="mb-3">
               <label class="form-label"> Número Escolhido </label>
-              <input required type="number" class="form-control" id="numero" min="0" max="30" >
+              <input type="number" class="form-control" id="numero" min="0" max="30" >
             </div>
             <div class="col-12 text-center">
-              <button type="submit" onclick="gerarRecibo()" class="btn btn-primary"> Gerar Recibo </button>
+              <button onclick="gerarRecibo()" class="btn btn-primary"> Gerar Recibo </button>
               <button type="reset" class="ms-5 btn btn-outline-danger"> Limpar </button>
             </div>
-          </form>
         </div>
       </div>
 
